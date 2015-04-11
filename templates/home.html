@@ -1,0 +1,161 @@
+{% extends "template.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+</br>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Open Source Python Login 
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> About Me</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>I was the first one in my generation of the family to go into Computer Science, so that was kind of a big deal.  I wanted to be a Webdesigner from the very beginning.</p>
+                        <a href="/log" class="btn btn-default">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> What  &amp; I do</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Programming 
+                        I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to Hacker, to read, to write, I to think,to love,.....
+</p>
+                        <a href="/log" class="btn btn-default">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> About Myself</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>II have a  Bachelor degree of Computer Science from St.lawrence University 2014.
+                            I am a Junior Lecturer of Programming at St.lawrence University and also Working @ Mcash Uganda as a software developer.
+                        <a href="/log" class="btn btn-default">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+       
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">What i do Most</h2>
+            </div>
+            <div class="col-md-6">
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Python(Django,Flask)</strong>
+                    </li>
+                    <li>Java Android</li>
+                    <li>Church Boy</li>
+                    <li>Help Students to Achieve their goals</li>
+                    <li>Teaching</li>
+                    <li>17 HTML pages</li>
+                </ul>
+                <p>I wanted to be a Webdesigner from the very beginning. A friend by the name of Isaah Salim when I started the Campus, said to me 'Why don't you think of doing a CISCO Certificate instead of a BACS degree and get into Hacking that way?' I told him I need to see Baba who advise me</p>
+            </div>
+            <div class="col-md-6" style="width:240px;height: auto;">
+                <img class="img-responsive" src="{{ url_for('static', filename='img/kevin.jpg') }}" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>I Can work for you...learn@kevinjanvier.com</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="/log">Twitter : @kevin_janvier</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; kevin Janvier 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
+
+{% endblock %}
